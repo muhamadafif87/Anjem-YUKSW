@@ -1,7 +1,7 @@
 export function PriceRow({ label, price }: { label: string; price: string }) {
   return (
     <li className="flex h-6 items-center justify-between text-xs">
-      <span className="text-sand">{label}</span>
+      <span className="text-white">{label}</span>
       <span className="text-white">{price}</span>
     </li>
   );

@@ -1,4 +1,5 @@
 import AccordionCard from "../AccordionCard";
+import CostCalculator from "../calculator/CostCalculator";
 import FeeExamples from "./FeeExamples";
 import { ItemCategory, PriceRow } from "./PricelistParts";
 
@@ -13,7 +14,7 @@ const anjem = [
 
 export default function PricelistSection() {
   return (
-    <AccordionCard title="PRICELIST">
+    <AccordionCard id="pricelist" title="PRICELIST">
       <p className="mx-auto mt-[9px] w-[311px] text-xs font-semibold text-sand">
         *Detail Pricelist ini dibuat sebagai acuan agar sesuai bagi customer dan beban kerja driver
       </p>
@@ -63,6 +64,7 @@ export default function PricelistSection() {
       </div>
 
       <FeeExamples />
+      <CostCalculator />
     </AccordionCard>
   );
 }

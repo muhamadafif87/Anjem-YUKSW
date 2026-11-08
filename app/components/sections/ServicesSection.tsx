@@ -3,10 +3,10 @@ import AccordionCard from "../AccordionCard";
 const services = [
   "Antar-jemput",
   "Jasa titip makanan",
-  "Jasa titip makanan",
-  "Jasa titip makanan",
-  "Jasa titip makanan",
-  "Jasa titip makanan",
+  "Jasa titip barang",
+  "Jasa antar barang",
+  "Jasa urus berkas",
+  "Jasa print & fc",
 ];
 const others = ["MUA", "DESAIN GRAFIS", "NAIL ART", "FOTOGRAFER", "APK PREMIUM", "DLL"];
 
@@ -24,7 +24,7 @@ export default function ServicesSection() {
           ))}
         </ul>
       </div>
-      <p className="mt-3.5 pl-10 text-sm font-semibold text-sand">*S&amp;K berlaku</p>
+      <p className="mt-3.5 pl-10 text-sm font-semibold text-sand">*dan segala macam jasa suruh lainnya <br></br>S&amp;K berlaku</p>
 
       <h3 className="mt-[31px] pl-[31px] text-xl leading-[21px] font-bold text-sand">
         KAMI JUGA MENYEDIAKAN:

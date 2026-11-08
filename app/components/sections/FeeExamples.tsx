@@ -22,14 +22,14 @@ export default function FeeExamples() {
         type="button"
         aria-expanded={show}
         onClick={() => setShow((v) => !v)}
-        className="mx-auto block h-[22px] w-[203px] rounded-[5px] bg-chat/20 text-xs font-semibold text-sand transition-colors hover:bg-chat/30"
+        className="glass mx-auto block h-[22px] w-[203px] rounded-[5px] text-xs font-semibold text-sand"
       >
         Lihat contoh perhitungan fee
       </button>
       {show && (
-        <div className="mx-auto mt-[23px] flex w-[313px] flex-col gap-2">
+        <div className="mx-auto mt-[23px] flex w-[313px] animate-slide-down flex-col gap-2">
           {examples.map((e) => (
-            <div key={e.title} className="rounded-[7px] bg-sand px-3.5 py-2 text-xs text-black">
+            <div key={e.title} className="rounded-[7px] bg-sand px-3.5 py-2 text-xs text-navy">
               <h5 className="font-bold">{e.title}</h5>
               <p className="mt-1 whitespace-pre-line">{e.body}</p>
             </div>

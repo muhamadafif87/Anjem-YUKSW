@@ -4,7 +4,7 @@ import "./globals.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
   variable: "--font-poppins",
 });
 const righteous = Righteous({
@@ -20,7 +20,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="id" className={`${poppins.variable} ${righteous.variable}`}>
+    <html
+      lang="id"
+      data-scroll-behavior="smooth"
+      className={`${poppins.variable} ${righteous.variable}`}
+    >
       <body className="min-h-screen font-sans antialiased">{children}</body>
     </html>
   );

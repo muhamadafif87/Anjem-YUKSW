@@ -3,7 +3,7 @@ import AccordionCard from "../AccordionCard";
 
 export default function AboutSection() {
   return (
-    <AccordionCard title={<>APA ITU<br />ANJEM YUKSW?</>}>
+    <AccordionCard id="about" title={<>APA ITU<br />ANJEM YUKSW?</>}>
       <Image
         src="/images/logo.png"
         alt="ANJEM YUKSW"
